@@ -4,7 +4,7 @@ Simple console application designed to manage employee data
 ## Overview
 MyEmployeeApp is a simple console application designed to manage employee data. It allows users to add new employees to a PostgreSQL database and perform basic CRUD operations.
 
-## Creating the Database:
+# Creating the Database:
 
 Navigate to the scripts folder.
 Run the PowerShell script setUpDatabase.ps1. This script will create the database in Docker.
@@ -17,7 +17,7 @@ Run the following command to apply the created migrations to Docker:
 
 dotnet ef database update
 
-## Functionality Testing
+# Functionality Testing
 To verify the functionality of the project:
 
 Navigate to the scripts folder.
