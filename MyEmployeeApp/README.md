@@ -1,45 +1,21 @@
 # MyEmployeeApp
-
-## Overview
-MyEmployeeApp is a simple console application designed to manage employee data. It allows users to add new employees to a PostgreSQL database and perform basic CRUD operations.
-
-## Creating the Database:
+## 9 tests passed for two functions: setEmployee and getEmployee
 
 ![image](https://github.com/tomasczerniawski/UVS-NET-TASK/assets/115027239/e9478f30-80a6-4e85-8010-6baaef1f8509)
 
-Navigate to the scripts folder.
-Run the PowerShell script setUpDatabase.ps1. This script will create the database in Docker.
+## Successful Employee Addition and Retrieval
 
-### Applying Migrations:
+![image](https://github.com/tomasczerniawski/UVS-NET-TASK/assets/115027239/d91892db-2c60-4b83-b993-8912bfab2a71)
 
-Navigate to the src folder.
-Navigate to MyEmployeeApp.Data.
-Run the following command to apply the created migrations to Docker:
+## Successful Creation of Database in Docker
 
-dotnet ef database update
+![image](https://github.com/tomasczerniawski/UVS-NET-TASK/assets/115027239/b26aaeaa-637b-4178-bfcf-4ab65a80fc8a)
 
-## Functionality Testing
-To verify the functionality of the project:
+## Successful Creation and Updating of Migrations
 
-Navigate to the scripts folder.
-Run the PowerShell script verifySubmission.ps1
+![image](https://github.com/tomasczerniawski/UVS-NET-TASK/assets/115027239/0c010a05-f569-443d-ab78-3f774f6b2ac6)
 
-### Using Command Line (Console Application):
+## Running the verifySubmission.ps1 Script
 
-Navigate to the MyEmployeeApp.ConsoleApp folder in the src directory.
-Execute the following  commands in terminal to add and retrieve employee information:
+![image](https://github.com/tomasczerniawski/UVS-NET-TASK/assets/115027239/13b28558-0577-4377-88be-d67b06cfaf74)
 
-dotnet run set-employee --employeeId 1 --employeeName John --employeeSalary 123
-
-dotnet run --no-build set-employee --employeeId 2 --employeeName Steve --employeeSalary 456
-
-dotnet run --no-build get-employee --employeeId 1
-
-dotnet run --no-build get-employee --employeeId 2
-
-
-# File Structure
-For the current project size, the file structure might seem like overkill. However, I aimed to make it as organized and scalable as possible. By dividing the project into Core, Data, and ConsoleApp directories, and including dedicated folders for DatabaseSchema and scripts, I prioritized clarity and future scalability.
-
-
-### Creator: Tomas Cerniawski
