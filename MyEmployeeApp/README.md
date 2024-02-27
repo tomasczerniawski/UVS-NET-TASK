@@ -5,6 +5,8 @@ MyEmployeeApp is a simple console application designed to manage employee data. 
 
 ## Creating the Database:
 
+![image](https://github.com/tomasczerniawski/UVS-NET-TASK/assets/115027239/e9478f30-80a6-4e85-8010-6baaef1f8509)
+
 Navigate to the scripts folder.
 Run the PowerShell script setUpDatabase.ps1. This script will create the database in Docker.
 
